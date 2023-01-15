@@ -9,12 +9,18 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+
 
 
 /*Screens*/
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 
 
@@ -35,4 +41,16 @@ body{
 
 .main-screen{
     padding: 0px var(--horizontal-space);
+}
+.hide{
+    width: 100vw;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 400px) and (max-height: 700px){
+    .hide{
+        opacity: 0;
+    }
 }
